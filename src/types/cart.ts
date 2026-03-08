@@ -9,7 +9,7 @@ export interface CartItem {
 export interface Cart {
   id: number;
   discountTotal: number;
-  userId: number;
-  items: CartItem[];
+  totalProducts: number;
+  products: CartItem[];
   total: number;
 }

@@ -39,12 +39,12 @@ export default function CartDetailsPage() {
       </Typography>
 
       <Typography>
-        Products: {cart.userId}
+        Products: {cart.totalProducts}
       </Typography>
 
       <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 3 }}>
 
-        {cart.items.map((p) => (
+        {cart.products.map((p) => (
           <CardItem key={p.id} item={p} />
         ))}
 

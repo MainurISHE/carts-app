@@ -18,7 +18,7 @@ export default function CartsTable({ carts }: Props) {
         <TableHead>
             <TableRow>
                 <TableCell>Cart ID</TableCell>
-                <TableCell>User ID</TableCell>
+                <TableCell>Price</TableCell>
                 <TableCell>Total</TableCell>
                 <TableCell>Discount Total</TableCell>
                 <TableCell>Actions</TableCell>
@@ -41,7 +41,7 @@ export default function CartsTable({ carts }: Props) {
                         </TableCell>
 
                         <TableCell>
-                            <Button component={Link} to={`/users/${cart.userId}`} variant="outlined" color="secondary">
+                            <Button component={Link} to={`/users/${cart.totalProducts}`} variant="outlined" color="secondary">
                                 Profile
                             </Button>
                         </TableCell>
